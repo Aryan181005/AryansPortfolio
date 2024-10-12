@@ -50,7 +50,7 @@ body{
 
 .contact > svg{
     position: absolute;
-    right:2em;
+    right:1.7em;
     opacity: 0;
     color: #25D366;
     transition: .2s ease-in-out;
@@ -82,10 +82,12 @@ body{
     align-items: center;
     gap:3%;
     padding: 2% 5%;
+    margin: 2% 0;
     border-radius: 10px;
     background: url(./images/intro-bg.jpeg);
     background-position: center;
     background-size:cover;
+    
 }
 
 #header > img{
@@ -127,16 +129,17 @@ body{
 #social-links > li > button > p{
     color: #fff;
     font-family: "Raleway", sans-serif;
+    font-size: 100%;
 }
 
 #nav-links > li > button > i,
 #social-links > li > button > i{
-    font-size: 1.2em;
+    font-size: 120%;
     color: #fff;
 }
 
-#right-part > *{
-    margin:2% 0;
+#right-part{
+    margin-right:.5%;
 }
 
 #desc{
@@ -171,30 +174,62 @@ body{
     cursor: pointer;
 }
 
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-para{
+    font-size:1.1em;
+    font-family: "Raleway", sans-serif;
+    margin:3% 3% 0 0;
+    line-height: 150%;
+}
+
+#intro-para h1{
+    font-size: 180%;
+}
+
+#intro-para p{
+    font-size: 90%;
+}
+
 #project-cards{
     display: flex;
-    gap:8rem;
-    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1#card-heading{
+    font-family: "Raleway", sans-serif;
+    font-size:180%;
+    margin:5% 0 2% 0;
+
 }
 
 .cards{
     background-color: #3d3b3bb8;
     display: flex;
     flex-direction: column;
+    flex:0 3% 33.33%;
     aspect-ratio: 105/59;
-    width: 300px;
+    width: 30%;
     border-radius: 10px;
+    margin:1%;
 }
 
 .card-img{
     overflow: hidden;
     border-radius: 10px;
+    width: 100%;
 }
 
 .card-img img{
     aspect-ratio: 105/59;
     object-fit: cover;
-    width: 300px;
+    width: inherit;
     border-radius: 10px;
     transition: all 200ms;
 }
@@ -218,6 +253,7 @@ body{
     font-size: .9rem;
     color: #ffffff60;
     transition: all 200ms;
+    margin-top:2%;
     font-family: "Raleway", sans-serif;
 }
 
