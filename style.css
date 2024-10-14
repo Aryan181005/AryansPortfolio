@@ -14,6 +14,7 @@ body{
     margin:0;
     background-color: #171616;
     color: #fff;
+    overflow-x: hidden;
 }
 
 #navbar{
@@ -98,8 +99,9 @@ body{
 
 #left-part{
     background-color: rgb(46, 44, 44);
-    margin:3% 10%;
+    margin: 3% auto;
     border-radius: 10px;
+    width: 80%;
 }
 
 #nav-links,#social-links{
@@ -121,13 +123,13 @@ body{
     gap:10px;
     background: transparent;
     border: none;
-    transition:all .4s;
+    transition:all .5s;
 }
 
 
 #nav-links > li > button > p,
 #social-links > li > button > p{
-    color: #fff;
+    color: #b7b7b7;
     font-family: "Raleway", sans-serif;
     font-size: 100%;
 }
@@ -135,11 +137,12 @@ body{
 #nav-links > li > button > i,
 #social-links > li > button > i{
     font-size: 120%;
-    color: #fff;
+    color: #b7b7b7;
 }
 
 #right-part{
-    margin-right:.5%;
+    margin: auto;
+    width: 95%;
 }
 
 #desc{
@@ -153,21 +156,26 @@ body{
 #nav-links > li > button:hover,
 #social-links > li > button:hover{
     cursor: pointer;
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
+}
+
+#nav-links > li > button:hover > i,
+#nav-links > li > button:hover > p,
+#social-links > li > button:hover > p{
+    color:#fff;
 }
 
 .follow-me{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .7%;
+    padding: 1%;
     gap:10px;
-    position: absolute;
-    right: 2%;
     border-radius: 7px;
     border: none;
     background-color: #3a3434;
     color: #c2bebe;
+    margin-left: auto;
 }
 
 .follow-me:hover{
