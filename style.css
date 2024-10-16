@@ -31,29 +31,33 @@ body{
     user-select: none;
 }
 
-.contact{
+.contact-link{
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap:5px;
-    padding: .5em 1.2em;
+    text-decoration: none;
+}
+
+.contact{
+    padding: .5em 1.3em;
     font-size: 1em;
     border: none;
     border-radius: 5px;
     background-color: #3a3434;
 }
 
-.contact > p{
+.contact-link > p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #fff;
     transition: .3s ease-in-out;
 }
 
-.contact > svg{
+.contact-link > svg{
     position: absolute;
     right:1.7em;
     opacity: 0;
-    color: #25D366;
+    color: #fff;
     transition: .2s ease-in-out;
 }
 
@@ -117,8 +121,8 @@ body{
     padding:3% 10%;
 }
 
-#nav-links > li > button,
-#social-links > li > button{
+#nav-links > li > a > button,
+#social-links > li > a > button{
     display: flex;
     gap:10px;
     background: transparent;
@@ -127,15 +131,15 @@ body{
 }
 
 
-#nav-links > li > button > p,
-#social-links > li > button > p{
+#nav-links > li > a > button > p,
+#social-links > li > a > button > p{
     color: #b7b7b7;
     font-family: "Raleway", sans-serif;
-    font-size: 100%;
+    font-size: 110%;
 }
 
-#nav-links > li > button > i,
-#social-links > li > button > i{
+#nav-links > li > a > button > i,
+#social-links > li > a > button > i{
     font-size: 120%;
     color: #b7b7b7;
 }
@@ -153,33 +157,40 @@ body{
     font-size: 2em;
 }
 
-#nav-links > li > button:hover,
-#social-links > li > button:hover{
+#nav-links > li > a > button:hover,
+#social-links > li > a > button:hover{
     cursor: pointer;
     /* transform: translateY(-3px); */
 }
 
-#nav-links > li > button:hover > i,
-#nav-links > li > button:hover > p,
-#social-links > li > button:hover > p{
+#nav-links > li > a > button:hover > i,
+#nav-links > li > a > button:hover > p,
+#social-links > li > a > button:hover > p{
     color:#fff;
 }
 
-.follow-me{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-    gap:10px;
+#follow-me-btn{
     border-radius: 7px;
     border: none;
     background-color: #3a3434;
-    color: #c2bebe;
     margin-left: auto;
+    padding: 1%;
+
 }
 
-.follow-me:hover{
+#follow-me-link{
+    text-decoration: none;
+    color: #c2bebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    transition: .2s;
+}
+
+#follow-me-link:hover{
     cursor: pointer;
+    color:#fff;
 }
 
 #profile{
