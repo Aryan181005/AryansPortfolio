@@ -121,6 +121,11 @@ body{
     padding:3% 10%;
 }
 
+#nav-links > li > a ,
+#social-links > li > a{
+    text-decoration: none;
+}
+
 #nav-links > li > a > button,
 #social-links > li > a > button{
     display: flex;
